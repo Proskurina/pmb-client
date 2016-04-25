@@ -10,11 +10,13 @@ require 'pmb/resources/resource'
 require 'pmb/resources/printer'
 require 'pmb/resources/print_job'
 require 'pmb/resources/label_type'
+require 'pmb/resources/label_template'
 
 # Collection Resources
 require 'pmb/resources/collection'
 require 'pmb/resources/printers'
 require 'pmb/resources/label_types'
+require 'pmb/resources/label_templates'
 
 # Errors
 require 'pmb/errors/pmb_error'

@@ -1,0 +1,933 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "type": "label_templates",
+      "attributes": {
+        "name": "LabWhere"
+      },
+      "relationships": {
+        "label_type": {
+          "data": {
+            "id": "1",
+            "type": "label_types"
+          }
+        },
+        "labels": {
+          "data": [
+            {
+              "id": "4",
+              "type": "labels"
+            },
+            {
+              "id": "5",
+              "type": "labels"
+            },
+            {
+              "id": "6",
+              "type": "labels"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "2",
+      "type": "label_templates",
+      "attributes": {
+        "name": "CGAP - Fat"
+      },
+      "relationships": {
+        "label_type": {
+          "data": {
+            "id": "2",
+            "type": "label_types"
+          }
+        },
+        "labels": {
+          "data": [
+            {
+              "id": "7",
+              "type": "labels"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "3",
+      "type": "label_templates",
+      "attributes": {
+        "name": "CGAP - Thin"
+      },
+      "relationships": {
+        "label_type": {
+          "data": {
+            "id": "3",
+            "type": "label_types"
+          }
+        },
+        "labels": {
+          "data": [
+            {
+              "id": "8",
+              "type": "labels"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "4",
+      "type": "label_templates",
+      "attributes": {
+        "name": "LabWhere - 2D"
+      },
+      "relationships": {
+        "label_type": {
+          "data": {
+            "id": "1",
+            "type": "label_types"
+          }
+        },
+        "labels": {
+          "data": [
+            {
+              "id": "9",
+              "type": "labels"
+            },
+            {
+              "id": "10",
+              "type": "labels"
+            },
+            {
+              "id": "11",
+              "type": "labels"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "5",
+      "type": "label_templates",
+      "attributes": {
+        "name": "LabWhere - PDF417"
+      },
+      "relationships": {
+        "label_type": {
+          "data": {
+            "id": "1",
+            "type": "label_types"
+          }
+        },
+        "labels": {
+          "data": [
+            {
+              "id": "12",
+              "type": "labels"
+            },
+            {
+              "id": "13",
+              "type": "labels"
+            },
+            {
+              "id": "14",
+              "type": "labels"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "included": [
+    {
+      "id": "1",
+      "type": "label_types",
+      "attributes": {
+        "feed_value": "008",
+        "fine_adjustment": "04",
+        "pitch_length": "0110",
+        "print_width": "0920",
+        "print_length": "0080",
+        "name": "Plate"
+      }
+    },
+    {
+      "id": "4",
+      "type": "labels",
+      "attributes": {
+        "name": "header"
+      },
+      "relationships": {
+        "bitmaps": {
+          "data": [
+            {
+              "id": "8",
+              "type": "bitmaps"
+            },
+            {
+              "id": "9",
+              "type": "bitmaps"
+            }
+          ]
+        },
+        "barcodes": {
+          "data": []
+        }
+      }
+    },
+    {
+      "id": "8",
+      "type": "bitmaps",
+      "attributes": {
+        "horizontal_magnification": "1",
+        "vertical_magnification": "1",
+        "font": "G",
+        "space_adjustment": "00",
+        "rotational_angles": "00",
+        "x_origin": "0020",
+        "y_origin": "0035",
+        "field_name": "header_text_1"
+      }
+    },
+    {
+      "id": "9",
+      "type": "bitmaps",
+      "attributes": {
+        "horizontal_magnification": "1",
+        "vertical_magnification": "1",
+        "font": "G",
+        "space_adjustment": "00",
+        "rotational_angles": "00",
+        "x_origin": "0020",
+        "y_origin": "0065",
+        "field_name": "header_text_2"
+      }
+    },
+    {
+      "id": "5",
+      "type": "labels",
+      "attributes": {
+        "name": "location"
+      },
+      "relationships": {
+        "bitmaps": {
+          "data": [
+            {
+              "id": "10",
+              "type": "bitmaps"
+            },
+            {
+              "id": "11",
+              "type": "bitmaps"
+            }
+          ]
+        },
+        "barcodes": {
+          "data": [
+            {
+              "id": "12",
+              "type": "barcodes"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "10",
+      "type": "bitmaps",
+      "attributes": {
+        "horizontal_magnification": "05",
+        "vertical_magnification": "1",
+        "font": "G",
+        "space_adjustment": "00",
+        "rotational_angles": "00",
+        "x_origin": "0030",
+        "y_origin": "0035",
+        "field_name": "location"
+      }
+    },
+    {
+      "id": "11",
+      "type": "bitmaps",
+      "attributes": {
+        "horizontal_magnification": "05",
+        "vertical_magnification": "1",
+        "font": "G",
+        "space_adjustment": "00",
+        "rotational_angles": "00",
+        "x_origin": "0030",
+        "y_origin": "0065",
+        "field_name": "parent_location"
+      }
+    },
+    {
+      "id": "12",
+      "type": "barcodes",
+      "attributes": {
+        "barcode_type": "9",
+        "one_module_width": "02",
+        "height": "0070",
+        "rotational_angle": null,
+        "one_cell_width": null,
+        "type_of_check_digit": null,
+        "no_of_columns": null,
+        "bar_height": null,
+        "x_origin": "0300",
+        "y_origin": "0000",
+        "field_name": "barcode"
+      }
+    },
+    {
+      "id": "6",
+      "type": "labels",
+      "attributes": {
+        "name": "footer"
+      },
+      "relationships": {
+        "bitmaps": {
+          "data": [
+            {
+              "id": "13",
+              "type": "bitmaps"
+            },
+            {
+              "id": "14",
+              "type": "bitmaps"
+            }
+          ]
+        },
+        "barcodes": {
+          "data": []
+        }
+      }
+    },
+    {
+      "id": "13",
+      "type": "bitmaps",
+      "attributes": {
+        "horizontal_magnification": "1",
+        "vertical_magnification": "1",
+        "font": "G",
+        "space_adjustment": "00",
+        "rotational_angles": "00",
+        "x_origin": "0050",
+        "y_origin": "0035",
+        "field_name": "footer_text_1"
+      }
+    },
+    {
+      "id": "14",
+      "type": "bitmaps",
+      "attributes": {
+        "horizontal_magnification": "1",
+        "vertical_magnification": "1",
+        "font": "G",
+        "space_adjustment": "00",
+        "rotational_angles": "00",
+        "x_origin": "0020",
+        "y_origin": "0065",
+        "field_name": "footer_text_2"
+      }
+    },
+    {
+      "id": "2",
+      "type": "label_types",
+      "attributes": {
+        "feed_value": "002",
+        "fine_adjustment": "10",
+        "pitch_length": "0280",
+        "print_width": "0330",
+        "print_length": "0200",
+        "name": "CGAP - Fat"
+      }
+    },
+    {
+      "id": "7",
+      "type": "labels",
+      "attributes": {
+        "name": "label_1"
+      },
+      "relationships": {
+        "bitmaps": {
+          "data": [
+            {
+              "id": "15",
+              "type": "bitmaps"
+            },
+            {
+              "id": "16",
+              "type": "bitmaps"
+            },
+            {
+              "id": "17",
+              "type": "bitmaps"
+            },
+            {
+              "id": "18",
+              "type": "bitmaps"
+            },
+            {
+              "id": "37",
+              "type": "bitmaps"
+            },
+            {
+              "id": "38",
+              "type": "bitmaps"
+            }
+          ]
+        },
+        "barcodes": {
+          "data": [
+            {
+              "id": "19",
+              "type": "barcodes"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "15",
+      "type": "bitmaps",
+      "attributes": {
+        "horizontal_magnification": "05",
+        "vertical_magnification": "05",
+        "font": "H",
+        "space_adjustment": "01",
+        "rotational_angles": "00",
+        "x_origin": "0100",
+        "y_origin": "0035",
+        "field_name": "barcode_text"
+      }
+    },
+    {
+      "id": "16",
+      "type": "bitmaps",
+      "attributes": {
+        "horizontal_magnification": "05",
+        "vertical_magnification": "05",
+        "font": "H",
+        "space_adjustment": "01",
+        "rotational_angles": "00",
+        "x_origin": "0000",
+        "y_origin": "0105",
+        "field_name": "reagent_name"
+      }
+    },
+    {
+      "id": "17",
+      "type": "bitmaps",
+      "attributes": {
+        "horizontal_magnification": "05",
+        "vertical_magnification": "05",
+        "font": "H",
+        "space_adjustment": "01",
+        "rotational_angles": "00",
+        "x_origin": "0100",
+        "y_origin": "0070",
+        "field_name": "batch_no"
+      }
+    },
+    {
+      "id": "18",
+      "type": "bitmaps",
+      "attributes": {
+        "horizontal_magnification": "05",
+        "vertical_magnification": "05",
+        "font": "H",
+        "space_adjustment": "01",
+        "rotational_angles": "00",
+        "x_origin": "0000",
+        "y_origin": "0140",
+        "field_name": "date"
+      }
+    },
+    {
+      "id": "37",
+      "type": "bitmaps",
+      "attributes": {
+        "horizontal_magnification": "05",
+        "vertical_magnification": "05",
+        "font": "H",
+        "space_adjustment": "01",
+        "rotational_angles": "00",
+        "x_origin": "0000",
+        "y_origin": "0175",
+        "field_name": "storage_condition"
+      }
+    },
+    {
+      "id": "38",
+      "type": "bitmaps",
+      "attributes": {
+        "horizontal_magnification": "05",
+        "vertical_magnification": "05",
+        "font": "H",
+        "space_adjustment": "01",
+        "rotational_angles": "00",
+        "x_origin": "0175",
+        "y_origin": "0175",
+        "field_name": "volume"
+      }
+    },
+    {
+      "id": "19",
+      "type": "barcodes",
+      "attributes": {
+        "barcode_type": "Q",
+        "one_module_width": null,
+        "height": "0080",
+        "rotational_angle": null,
+        "one_cell_width": "04",
+        "type_of_check_digit": null,
+        "no_of_columns": null,
+        "bar_height": null,
+        "x_origin": "0080",
+        "y_origin": "0000",
+        "field_name": "barcode"
+      }
+    },
+    {
+      "id": "3",
+      "type": "label_types",
+      "attributes": {
+        "feed_value": "002",
+        "fine_adjustment": "10",
+        "pitch_length": "0110",
+        "print_width": "0850",
+        "print_length": "0070",
+        "name": "CGAP - Thin"
+      }
+    },
+    {
+      "id": "8",
+      "type": "labels",
+      "attributes": {
+        "name": "label_1"
+      },
+      "relationships": {
+        "bitmaps": {
+          "data": [
+            {
+              "id": "20",
+              "type": "bitmaps"
+            },
+            {
+              "id": "21",
+              "type": "bitmaps"
+            },
+            {
+              "id": "22",
+              "type": "bitmaps"
+            },
+            {
+              "id": "23",
+              "type": "bitmaps"
+            },
+            {
+              "id": "26",
+              "type": "bitmaps"
+            },
+            {
+              "id": "39",
+              "type": "bitmaps"
+            }
+          ]
+        },
+        "barcodes": {
+          "data": [
+            {
+              "id": "24",
+              "type": "barcodes"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "20",
+      "type": "bitmaps",
+      "attributes": {
+        "horizontal_magnification": "05",
+        "vertical_magnification": "05",
+        "font": "H",
+        "space_adjustment": "01",
+        "rotational_angles": "00",
+        "x_origin": "0125",
+        "y_origin": "0030",
+        "field_name": "reagent_name"
+      }
+    },
+    {
+      "id": "21",
+      "type": "bitmaps",
+      "attributes": {
+        "horizontal_magnification": "05",
+        "vertical_magnification": "05",
+        "font": "H",
+        "space_adjustment": "01",
+        "rotational_angles": "00",
+        "x_origin": "0125",
+        "y_origin": "0065",
+        "field_name": "barcode_text"
+      }
+    },
+    {
+      "id": "22",
+      "type": "bitmaps",
+      "attributes": {
+        "horizontal_magnification": "05",
+        "vertical_magnification": "05",
+        "font": "H",
+        "space_adjustment": "01",
+        "rotational_angles": "00",
+        "x_origin": "0575",
+        "y_origin": "0030",
+        "field_name": "batch_no"
+      }
+    },
+    {
+      "id": "23",
+      "type": "bitmaps",
+      "attributes": {
+        "horizontal_magnification": "05",
+        "vertical_magnification": "05",
+        "font": "H",
+        "space_adjustment": "01",
+        "rotational_angles": "00",
+        "x_origin": "0575",
+        "y_origin": "0065",
+        "field_name": "date"
+      }
+    },
+    {
+      "id": "26",
+      "type": "bitmaps",
+      "attributes": {
+        "horizontal_magnification": "05",
+        "vertical_magnification": "05",
+        "font": "H",
+        "space_adjustment": "00",
+        "rotational_angles": "00",
+        "x_origin": "0430",
+        "y_origin": "0065",
+        "field_name": "volume"
+      }
+    },
+    {
+      "id": "39",
+      "type": "bitmaps",
+      "attributes": {
+        "horizontal_magnification": "05",
+        "vertical_magnification": "05",
+        "font": "H",
+        "space_adjustment": "00",
+        "rotational_angles": "00",
+        "x_origin": "0340",
+        "y_origin": "0065",
+        "field_name": "storage_condition"
+      }
+    },
+    {
+      "id": "24",
+      "type": "barcodes",
+      "attributes": {
+        "barcode_type": "Q",
+        "one_module_width": null,
+        "height": "0070",
+        "rotational_angle": null,
+        "one_cell_width": "04",
+        "type_of_check_digit": null,
+        "no_of_columns": null,
+        "bar_height": null,
+        "x_origin": "0075",
+        "y_origin": "0000",
+        "field_name": "barcode"
+      }
+    },
+    {
+      "id": "9",
+      "type": "labels",
+      "attributes": {
+        "name": "header"
+      },
+      "relationships": {
+        "bitmaps": {
+          "data": [
+            {
+              "id": "27",
+              "type": "bitmaps"
+            },
+            {
+              "id": "28",
+              "type": "bitmaps"
+            }
+          ]
+        },
+        "barcodes": {
+          "data": []
+        }
+      }
+    },
+    {
+      "id": "27",
+      "type": "bitmaps",
+      "attributes": {
+        "horizontal_magnification": "1",
+        "vertical_magnification": "1",
+        "font": "G",
+        "space_adjustment": "00",
+        "rotational_angles": "00",
+        "x_origin": "0020",
+        "y_origin": "0035",
+        "field_name": "header_text_1"
+      }
+    },
+    {
+      "id": "28",
+      "type": "bitmaps",
+      "attributes": {
+        "horizontal_magnification": "1",
+        "vertical_magnification": "1",
+        "font": "G",
+        "space_adjustment": "00",
+        "rotational_angles": "00",
+        "x_origin": "0020",
+        "y_origin": "0065",
+        "field_name": "header_text_2"
+      }
+    },
+    {
+      "id": "10",
+      "type": "labels",
+      "attributes": {
+        "name": "location"
+      },
+      "relationships": {
+        "bitmaps": {
+          "data": [
+            {
+              "id": "29",
+              "type": "bitmaps"
+            },
+            {
+              "id": "30",
+              "type": "bitmaps"
+            }
+          ]
+        },
+        "barcodes": {
+          "data": [
+            {
+              "id": "31",
+              "type": "barcodes"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "29",
+      "type": "bitmaps",
+      "attributes": {
+        "horizontal_magnification": "05",
+        "vertical_magnification": "1",
+        "font": "G",
+        "space_adjustment": "00",
+        "rotational_angles": "00",
+        "x_origin": "0030",
+        "y_origin": "0035",
+        "field_name": "location"
+      }
+    },
+    {
+      "id": "30",
+      "type": "bitmaps",
+      "attributes": {
+        "horizontal_magnification": "05",
+        "vertical_magnification": "1",
+        "font": "G",
+        "space_adjustment": "00",
+        "rotational_angles": "00",
+        "x_origin": "0030",
+        "y_origin": "0065",
+        "field_name": "parent_location"
+      }
+    },
+    {
+      "id": "31",
+      "type": "barcodes",
+      "attributes": {
+        "barcode_type": "Q",
+        "one_module_width": null,
+        "height": "0070",
+        "rotational_angle": null,
+        "one_cell_width": "04",
+        "type_of_check_digit": null,
+        "no_of_columns": null,
+        "bar_height": null,
+        "x_origin": "0300",
+        "y_origin": "0000",
+        "field_name": "barcode"
+      }
+    },
+    {
+      "id": "11",
+      "type": "labels",
+      "attributes": {
+        "name": "footer"
+      },
+      "relationships": {
+        "bitmaps": {
+          "data": [
+            {
+              "id": "32",
+              "type": "bitmaps"
+            },
+            {
+              "id": "33",
+              "type": "bitmaps"
+            }
+          ]
+        },
+        "barcodes": {
+          "data": []
+        }
+      }
+    },
+    {
+      "id": "32",
+      "type": "bitmaps",
+      "attributes": {
+        "horizontal_magnification": "1",
+        "vertical_magnification": "1",
+        "font": "G",
+        "space_adjustment": "00",
+        "rotational_angles": "00",
+        "x_origin": "0050",
+        "y_origin": "0035",
+        "field_name": "footer_text_1"
+      }
+    },
+    {
+      "id": "33",
+      "type": "bitmaps",
+      "attributes": {
+        "horizontal_magnification": "1",
+        "vertical_magnification": "1",
+        "font": "G",
+        "space_adjustment": "00",
+        "rotational_angles": "00",
+        "x_origin": "0020",
+        "y_origin": "0065",
+        "field_name": "footer_text_2"
+      }
+    },
+    {
+      "id": "12",
+      "type": "labels",
+      "attributes": {
+        "name": "header"
+      },
+      "relationships": {
+        "bitmaps": {
+          "data": []
+        },
+        "barcodes": {
+          "data": []
+        }
+      }
+    },
+    {
+      "id": "13",
+      "type": "labels",
+      "attributes": {
+        "name": "location"
+      },
+      "relationships": {
+        "bitmaps": {
+          "data": [
+            {
+              "id": "34",
+              "type": "bitmaps"
+            },
+            {
+              "id": "35",
+              "type": "bitmaps"
+            }
+          ]
+        },
+        "barcodes": {
+          "data": [
+            {
+              "id": "36",
+              "type": "barcodes"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "34",
+      "type": "bitmaps",
+      "attributes": {
+        "horizontal_magnification": "05",
+        "vertical_magnification": "1",
+        "font": "G",
+        "space_adjustment": "00",
+        "rotational_angles": "00",
+        "x_origin": "0030",
+        "y_origin": "0035",
+        "field_name": "location"
+      }
+    },
+    {
+      "id": "35",
+      "type": "bitmaps",
+      "attributes": {
+        "horizontal_magnification": "05",
+        "vertical_magnification": "1",
+        "font": "G",
+        "space_adjustment": "00",
+        "rotational_angles": "00",
+        "x_origin": "0030",
+        "y_origin": "0065",
+        "field_name": "parent_location"
+      }
+    },
+    {
+      "id": "36",
+      "type": "barcodes",
+      "attributes": {
+        "barcode_type": "P",
+        "one_module_width": "02",
+        "height": "0070",
+        "rotational_angle": null,
+        "one_cell_width": "04",
+        "type_of_check_digit": null,
+        "no_of_columns": "02",
+        "bar_height": "0010",
+        "x_origin": "0300",
+        "y_origin": "0000",
+        "field_name": "barcode"
+      }
+    },
+    {
+      "id": "14",
+      "type": "labels",
+      "attributes": {
+        "name": "footer"
+      },
+      "relationships": {
+        "bitmaps": {
+          "data": []
+        },
+        "barcodes": {
+          "data": []
+        }
+      }
+    }
+  ]
+}

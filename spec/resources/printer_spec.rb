@@ -16,7 +16,7 @@ RSpec.shared_examples "a createable printer resource" do
     expect(subject).to be_kind_of PMB::Printer
     expect(subject.id).to eql('1')
     expect(subject.type).to eql('printers')
-    expect(subject.attributes["name"]).to eql('test_printer')
+    expect(subject.attributes["name"]).to eql('ippbc')
     expect(subject.attributes["protocol"]).to eql('LPD')
   end
 
@@ -70,7 +70,7 @@ RSpec.describe PMB::Printer do
         data: {
           type: 'printers',
           attributes: {
-            name: 'test_printer',
+            name: 'ippbc',
             protocol: 'LPD'
           }
         }
@@ -78,7 +78,7 @@ RSpec.describe PMB::Printer do
     }
 
     before do
-      request_returns body: printer_json(name: 'test_printer')
+      request_returns body: printer_json
     end
 
     context 'with JSON' do
@@ -87,7 +87,7 @@ RSpec.describe PMB::Printer do
     end
 
     context 'with parameters' do
-      subject { PMB::Printer.create(name: 'test_printer', protocol: PMB::Printer::LPD) }
+      subject { PMB::Printer.create(name: 'ippbc', protocol: PMB::Printer::LPD) }
       it_behaves_like 'a createable printer resource'
     end
 

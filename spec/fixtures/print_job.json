@@ -1,0 +1,36 @@
+  {
+    "data": {
+      "id": "",
+      "type": "print_jobs",
+      "attributes": {
+        "printer_name": "d304bc",
+        "label_template_id": 1,
+        "labels": {
+          "header": {
+            "header_text_1": "header_text_1",
+            "header_text_2": "header_text_2"
+          },
+          "footer": {
+            "footer_text_1": "footer_text_1",
+            "footer_text_2": "footer_text_2"
+          },
+          "body": [
+            {
+              "location": {
+                "location": "location",
+                "parent_location": "parent_location",
+                "barcode": "barcode"
+              }
+            },
+            {
+              "location": {
+                "location": "location",
+                "parent_location": "parent_location",
+                "barcode": "barcode"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }

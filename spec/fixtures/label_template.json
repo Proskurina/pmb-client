@@ -1,0 +1,35 @@
+{
+  "data": 
+    {
+      "id": "1",
+      "type": "label_templates",
+      "attributes": {
+        "name": "LabWhere"
+      },
+      "relationships": {
+        "label_type": {
+          "data": {
+            "id": "1",
+            "type": "label_types"
+          }
+        },
+        "labels": {
+          "data": 
+          [
+            {
+              "id": "1",
+              "type": "labels"
+            },
+            {
+              "id": "2",
+              "type": "labels"
+            },
+            {
+              "id": "3",
+              "type": "labels"
+            }
+          ]
+        }
+      }
+    }
+}
