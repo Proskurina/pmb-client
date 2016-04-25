@@ -1,9 +1,9 @@
 module PMB
   module Fixtures
 
-	def label_templates_json
-	  from_file "label_templates"
-	end  	
+  	def label_templates_json
+  	  from_file "label_templates"
+  	end  	
 
   	def label_templates_struct
   	  JSON.parse label_templates_json
@@ -48,6 +48,14 @@ module PMB
   	def printer_struct
   	  JSON.parse printer_json
   	end
+
+    def label_template_creation_json
+      from_file "label_template_creation"
+    end
+
+    def label_template_creation_struct
+      JSON.parse label_template_creation_json
+    end
 
   	private
 

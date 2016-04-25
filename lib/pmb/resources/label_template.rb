@@ -5,5 +5,21 @@ module PMB
 
   	attr_accessor :id, :type, :attributes, :relationships
 
+  	def self.to_json(args)
+      return LabelTemplateCreation.new(args).to_json
+    end
+
+    LabelTemplateCreation = Struct.new(:attributes) do
+
+      def to_json
+        JSON.generate(
+          data: {
+            attributes: attributes
+          }
+        )
+      end
+
+    end
+
   end
 end
